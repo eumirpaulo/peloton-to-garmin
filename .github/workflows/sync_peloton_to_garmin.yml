@@ -72,8 +72,12 @@ jobs:
               "MinimumLevel": "Information"
             }
           }
-        },
-        "DeviceInfoSettings": {
+        }
+
+  run: |
+      cat <<EOT > /app/DeviceInfoSettings 
+        {
+      "DeviceInfoSettings": {
           "none": {
             "name": "fenix 6 Pro",
             "unitId": 1,
@@ -87,8 +91,8 @@ jobs:
             }
           }
         }
+        }
         EOT
-    
     - name: ▶ Run P2G Sync
       run: /app/ConsoleClient
       if: ${{ env.P2G_PELOTON__EMAIL && env.P2G_PELOTON__PASSWORD && env.P2G_GARMIN__EMAIL && env.P2G_GARMIN__PASSWORD }}
@@ -107,4 +111,5 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
