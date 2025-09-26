@@ -132,13 +132,13 @@ This config section allows you to specificy a Device per [Exercise Type](exercis
           }
         },
         "cycling": {
-          "name": "TacxTrainingAppWin",
+          "name": "fenix 6 Pro",
           "unitId": 1,
-          "productID": 20533,
-          "manufacturerId": 89,
+          "productID": 3290,
+          "manufacturerId": 1,
           "version": {
-            "versionMajor": 1,
-            "versionMinor": 30.0,
+            "versionMajor": 28,
+            "versionMinor": 2.0,
             "buildMajor": 0,
             "buildMinor": 0.0
           }
