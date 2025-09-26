@@ -103,7 +103,8 @@ namespace UnitTests.Conversion
 
 			autoMocker.GetMock<ISettingsService>()
 				.Setup(x => x.GetCustomDeviceInfoAsync(It.IsAny<Workout>()))
-				.ReturnsAsync(GarminDevices.TACXDevice);
+
+				.ReturnsAsync(GarminDevices.fenix6Pro);
 
 			var convertedMesgs = await converter.ConvertForTest(workoutPath, settings);
 
