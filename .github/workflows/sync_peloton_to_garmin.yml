@@ -17,6 +17,7 @@ on:
 
 env:
   OUTPUT_DIR: /app/output
+  P2G_GARMIN__DEVICE: fenix6Pro
 
 jobs:
   sync:
@@ -91,6 +92,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
