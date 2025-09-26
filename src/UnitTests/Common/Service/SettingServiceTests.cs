@@ -43,7 +43,7 @@ public class SettingServiceTests
 				{
 					{ WorkoutType.None, new GarminDeviceInfo() { Name = "MyDefaultDevice" } },
 					{ WorkoutType.Circuit, GarminDevices.Forerunner945 },
-					{ WorkoutType.Cycling, GarminDevices.TACXDevice },
+					{ WorkoutType.Cycling, GarminDevices.fenix6pro },
 					{ WorkoutType.Meditation, GarminDevices.EpixDevice },
 				};
 
