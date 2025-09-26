@@ -64,7 +64,7 @@ public class Format
 	public static readonly Dictionary<WorkoutType, GarminDeviceInfo> DefaultDeviceInfoSettings = new Dictionary<WorkoutType, GarminDeviceInfo>()
 	{
 		{ WorkoutType.None, GarminDevices.Forerunner945 },
-		{ WorkoutType.Cycling, GarminDevices.TACXDevice },
+		{ WorkoutType.Cycling, GarminDevices.fenix6Pro },
 		{ WorkoutType.Rowing, GarminDevices.EpixDevice },
 	};
 
@@ -178,6 +178,7 @@ public class GarminApiSettings
 
 	public string Origin { get; set; } = "https://sso.garmin.com";
 	public string Referer { get; set; } = "https://sso.garmin.com/sso/signin";
+
 
 
 }
