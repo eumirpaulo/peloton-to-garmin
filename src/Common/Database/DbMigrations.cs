@@ -134,7 +134,7 @@ public class DbMigrations : IDbMigrations
 				settings.Format.DeviceInfoSettings = new Dictionary<WorkoutType, GarminDeviceInfo>()
 				{
 					{ WorkoutType.None, GarminDevices.Forerunner945 },
-					{ WorkoutType.Cycling, GarminDevices.TACXDevice },
+					{ WorkoutType.Cycling, GarminDevices.fenix6Pro },
 					{ WorkoutType.Rowing, GarminDevices.EpixDevice },
 				};
 				
@@ -162,4 +162,5 @@ public class DbMigrations_LegacyDeviceInfo
 }
 
 #pragma warning restore CS0612 // Type or member is obsolete
+
 #pragma warning restore CS0618 // Type or member is obsolete
