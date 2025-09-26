@@ -63,5 +63,21 @@
 				BuildMinor = 0,
 			}
 		};
+		
+		public static readonly GarminDeviceInfo fenix6Pro = new GarminDeviceInfo()
+		{
+			Name = "fenix 6 Pro", // Max 20 Chars
+			ProductID = 3290, // GarminProduct.fenix6pro,
+			UnitId = 1,
+			ManufacturerId = 1, // Garmin
+			Version = new GarminDeviceVersion()
+			{
+				VersionMajor = 28,
+				VersionMinor = 2.0,
+				BuildMajor = 0,
+				BuildMinor = 0,
+			}
+		};
+
 	}
 }
