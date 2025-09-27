@@ -52,7 +52,7 @@ jobs:
             "DeviceInfoSettings": {
               "none": {
                 "name": "fenix 6 Pro",
-                "unitId": 1,
+                "unitId": 3303218728,
                 "productID": 3290,
                 "manufacturerId": 1,
                 "version": {
@@ -106,6 +106,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
