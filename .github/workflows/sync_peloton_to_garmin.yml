@@ -48,7 +48,21 @@ jobs:
             "Tcx": false,
             "SaveLocalCopy": ${{ github.event.inputs.saveLocalCopy || false }},
             "IncludeTimeInHRZones": false,
-            "IncludeTimeInPowerZones": false,
+            "IncludeTimeInPowerZones": false,          
+            "DeviceInfoSettings": {
+              "none": {
+                "name": "fenix 6 Pro",
+                "unitId": 1,
+                "productID": 3290,
+                "manufacturerId": 1,
+                "version": {
+                  "versionMajor": 28,
+                  "versionMinor": 2.0,
+                  "buildMajor": 0,
+                  "buildMinor": 0.0
+                }
+            }
+          },
             "StackedWorkouts": {
               "AutomaticallyStackWorkouts": false,
               "MaxAllowedGapSeconds": 300
@@ -72,21 +86,7 @@ jobs:
               "Using": [ "Serilog.Sinks.Console"],
               "MinimumLevel": "Information"
             }
-          },
-          "DeviceInfoSettings": {
-            "cycling": {
-              "name": "fenix 6 Pro",
-              "unitId": 1,
-              "productID": 3290,
-              "manufacturerId": 1,
-              "version": {
-                "versionMajor": 28,
-                "versionMinor": 2.0,
-                "buildMajor": 0,
-                "buildMinor": 0.0
-              }
-        }
-        }
+          }
         }
     - name: ▶ Run P2G Sync
       run: /app/ConsoleClient
@@ -106,6 +106,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
