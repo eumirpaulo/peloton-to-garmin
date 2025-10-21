@@ -51,6 +51,20 @@ jobs:
             "StackedWorkouts": {
               "AutomaticallyStackWorkouts": false,
               "MaxAllowedGapSeconds": 300
+            },
+            "deviceInfoSettings": {
+              "none": {
+                "name": "fenix 6 Pro",
+                "unitId": 3303218728,
+                "productID": 3290,
+                "manufacturerId": 1,
+                "version": {
+                  "versionMajor": 28,
+                  "versionMinor": 2.0,
+                  "buildMajor": 0,
+                  "buildMinor": 0.0
+                }
+              }
             }
           },
           "Peloton": {
@@ -94,6 +108,7 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
 
