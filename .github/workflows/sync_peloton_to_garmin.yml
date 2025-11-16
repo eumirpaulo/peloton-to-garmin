@@ -55,6 +55,7 @@ jobs:
           },
           "Peloton": {
             "NumWorkoutsToDownload": ${{ github.event.inputs.workoutsToDownload || env.DEFAULT_WORKOUT_NUM }},
+            "BearerToken": ${{ secrets.BEARERTOKEN }}
           },
           "Garmin": {
             "Upload": true,
@@ -84,6 +85,7 @@ jobs:
         P2G_PELOTON__PASSWORD: ${{ secrets.P2G_PELOTON__PASSWORD }}
         P2G_GARMIN__EMAIL: ${{ secrets.P2G_GARMIN__EMAIL }}
         P2G_GARMIN__PASSWORD: ${{ secrets.P2G_GARMIN__PASSWORD }}
+        BEARERTOKEN: ${{ secrets.BEARERTOKEN }}
         TZ: America/Chicago
 
     - name: ⤴ Upload output directory
@@ -93,3 +95,4 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
