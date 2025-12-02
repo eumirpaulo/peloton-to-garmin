@@ -48,7 +48,6 @@ jobs:
             "SaveLocalCopy": ${{ github.event.inputs.saveLocalCopy || false }},
             "IncludeTimeInHRZones": false,
             "IncludeTimeInPowerZones": false
-           }
           },
             "StackedWorkouts": {
               "AutomaticallyStackWorkouts": false,
