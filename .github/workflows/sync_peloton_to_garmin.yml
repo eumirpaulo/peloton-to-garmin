@@ -8,12 +8,12 @@ on:
     inputs:
       workoutsToDownload:
         type: number
-        default: "5"
+        default: "1"
       saveLocalCopy:
         type: boolean
-        default: false
+        default: true
   schedule:
-    - cron: '0 12 * * *'
+    - cron: '0 7 * * *'
 
 env:
   OUTPUT_DIR: /app/output
@@ -93,5 +93,6 @@ jobs:
         name: output
         path: ${{ env.OUTPUT_DIR }}
         if-no-files-found: error
+
 
 
